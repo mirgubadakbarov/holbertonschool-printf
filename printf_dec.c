@@ -1,3 +1,4 @@
+#include <stdarg.h>
 /**
  * printf_dec - prints decimal
  * @args: argument to print
