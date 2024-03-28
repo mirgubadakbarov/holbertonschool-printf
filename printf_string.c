@@ -1,9 +1,11 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * printf_string - print a string.
  * @val: argumen t.
  * Return: the length of the string.
  */
+
 
 int printf_string(va_list val)
 {
@@ -28,11 +30,11 @@ int printf_string(va_list val)
 	}
 }
 
-#include <stddef.h>
 
-size_t _strlen(const char *str) {
-    size_t len = 0;
-    while (str[len] != '\0') {
+
+int _strlen(char *s) {
+    int len = 0;
+    while (s[len] != '\0') {
         len++;
     }
     return len;
